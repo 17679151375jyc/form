@@ -1,0 +1,557 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+  -webkit-font-smoothing: antialiased; 
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: none;
+}
+body a:focus, a:hover {
+	text-decoration: none;
+}
+input[type="button"], input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:1px;
+}
+p {
+	margin:0;
+}
+ul {
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+label {
+	margin:0;
+}
+a:focus, a:hover {
+	text-decoration: none;
+	outline: none
+}
+div{
+  -webkit-font-smoothing: antialiased; 
+}
+img {
+	width: 100%;
+}
+@font-face{
+	font-family: 'Segoe UI';
+    src:url('./segoeui.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+  /* header部分导航 */
+  /* 选项卡的5个选项菜单 */
+  .nav-ul{
+    width: 100%;
+  }
+  .nav-ul ul{
+    width: 100%;
+  }
+  .van-step--finish .van-step__circle, .van-step--finish .van-step__line{
+    background-color: #38f;
+  }
+  .van-steps--horizontal{
+    position: fixed;
+    width: 95%;
+    padding-right:5%;
+    z-index:10;
+    top: 0;
+    height: 15vw;
+    border-bottom: 1px solid #F7F4F4;
+  }
+  .van-step--horizontal .van-step__title{
+    font-size: 3.6vw;
+    font-weight: bold;
+  }
+  .van-steps--horizontal .van-steps__items{
+    margin-top: 2.5vw;
+  }
+  /* 选项卡的5个选项内容 */
+  .content{
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10pt;
+    margin-top: 15vw;
+  }
+  .content ul{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .content ul li{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+  }
+  /* 底部按钮 */
+  .dibu{
+      width: 100%;
+      height: 25vw;
+      line-height: 25vw;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      z-index: 20;
+      background-color: #fff;
+      box-shadow:0px -5px 60px -23pt #3388ff;
+    }
+  .dibu button{
+    font-size: 4vw;
+    font-weight: bold;
+    height: 15vw;
+    border-radius: 3vw;
+  }
+  .button1{
+    width: 75%;
+  }
+  .button2{
+    width: 44%;
+    margin-right: 4%;
+    background-color: #E4E9F0;
+    color: #898F99;
+  }
+  .button3{
+    width: 44%;
+  }
+  .div_conts{
+    width: 100%;
+    overflow: hidden;
+  }
+  /* 表单内容样式 */
+  .div-input{
+    height: 12vw;
+    width: 100%;
+    line-height: 12vw;
+    margin-top: 3vw;
+    clear: both;
+  }
+  .div-input label{
+    margin-left: 2.5%;
+    font-size: 3.5vw;
+  }
+  .div_xial{
+    width: 67%;
+    float: right;
+    height: 12vw;
+    margin-right: 5%;
+    position: relative;
+  }
+  .div_xial .img_div_x{
+    float: right;
+    margin-top: 4vw;
+    margin-right: 1vw;
+    z-index: 4;
+  }
+  .div_ipsl{
+    width: 81%;
+    height: 12vw;
+    line-height: 8vw;
+    float: right;
+    padding-right: 5%;
+  }
+  .van-cell:not(:last-child):after{
+    border-bottom: 0;
+  }
+  .dai_ap{
+    width: 80%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    right: -1vw;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+  .dai_ap ul{
+    width: 100%;
+    overflow: hidden;
+  }
+  .dai_ap ul li{
+    width: 100%;
+    float: right;
+    background-color: #F2F4F7;
+    height: 12vw;
+    overflow: hidden;
+    text-align: right;
+    line-height: 12vw;
+    padding-right: 5%;
+    border-top: 2px solid #fff;
+  }
+  .dai_ap ul li:first-child{
+    border: 0;
+  }
+        /* 表单的input样式 */
+  .input-style{
+    border: 1px solid #e4e9f0;
+    background-color: #f2f4f7;
+    height: 12vw;
+    width: 68%;
+    float: right;
+    margin-right: 4.5vw;
+    font-size: 3.5vw;
+    border-radius: 2.5vw;
+  }
+        /* 获取地址栏样式 */
+  .input-style2{
+    border:0;
+    height: 12vw;
+    width: 58%;
+    float: right;
+    margin-right: 4%;
+    font-size: 3.6vw;
+  }
+  .div-input img{
+    width: 5vw;
+    height: 5vw;
+    float: right;
+    margin-right: 5%;
+    margin-top: 3vw;
+  }
+  /* input字体颜色 */
+  .van-field__control{
+    color:#737880;
+  }
+  .van-field__control:disabled{
+    color: #000;
+  }
+  /* 第二页texttarea样式 */
+  .Text_Area{
+    background-color: #f2f4f7;
+    border-radius: 3vw;
+    float: right;
+    margin-right: 4.5vw;
+    width: 60%;
+    height: 125px;
+    padding: 17px;
+    font-size: 3.6vw;
+  }
+  .Text_Area .textarea_cont{
+    background-color: #f2f4f7;
+    /* 去三角 */
+    resize: none;
+    /* 字距 */
+    letter-spacing:1px;
+    width: 100%;
+    text-align: justify;
+    height: 100px;
+    line-height: 20px;
+    border: none;
+    color: #737880;
+    overflow:hidden;
+  }
+  .Text_Area a{
+    float: right;
+    color:#1989FA;
+    margin-top: 4px;
+  }
+  .van-popup--center{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 3.5vw;
+  }
+  .Icon_x{
+    float: right;
+    margin-top: 1vw;
+    margin-right: 1vw;
+  }
+  .van-popup--center h3{
+    margin-top: 3vw;
+    padding:0 15%;
+  }
+  .van-popup--center .tan_cont{
+    width: 90%;
+    margin:5%;
+    height: 80%;
+  }
+  .van-popup--center .tan_cont .textarea_xq{
+    width: 92%;
+    height: 100%;
+    letter-spacing:2px;
+    font-size: 4vw;
+    line-height: 5.5vw;
+    border-radius: 5pt;
+    border: 0;
+    /* 去三角 */
+    resize: none;
+    background-color: rgba(0,0,0,0.05);
+    padding:4%;
+    text-align: justify;
+  }
+  .impot{
+    width: 80%;
+    height: 350px;
+    text-align: center;
+  }
+  .impot_div{
+    width: 80%;
+    clear: both;
+    margin-top: 10px;
+    margin: 10%;
+    background-color: rgba(0,0,0,0.05);
+    padding-top: 15px;
+  }
+  .impot_div .kuang{
+    height: 100px;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .kuanga{
+    height: 50px;
+    padding-left: 5%;
+    border: 1px solid rgba(0,0,0,0.05);
+    text-align: left;
+    font-size: 3.5vw;
+  }
+  .kuanga span{
+    width: 50%;
+    padding-right: 50%;
+  }
+  .input_qd{
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-right: 5%;
+    font-size: 3.5vw;
+    border-radius: 3vw;
+  }
+  .inp_qd{
+    height: 50px;
+    line-height: 30px;
+    font-size: 3.5vw;
+    border-radius: 3vw;
+  }
+  .butss{
+    width: 60%;
+    font-size: 4vw;
+    border-radius: 5vw;
+    height: 12vw;
+  }
+  /* 第三页样式 */
+  .form_list{
+    width:94%;
+    padding:0 3%;
+    overflow: hidden;
+    padding-bottom: 50vw;
+  }
+  .form_list ul li{
+    line-height: 12vw;
+    text-align: right;   
+    margin-top: 5vw; 
+    font-size: 3.5vw;
+    overflow: hidden;
+  }
+  .form_list ul li:nth-child(1){
+    margin-bottom: -10px;
+  }
+  .form_list ul li div{
+    width: 90%;
+    padding:10px 5%;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background-color: #f7f8fa;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .form_list ul li div p{
+    width: 100%;
+    line-height: 20px;
+    font-size: 3.5vw;
+    text-align: justify;
+  }
+  .form_list ul li span:nth-child(1){
+    float: left;
+    font-weight: bold;
+    font-size: 3.7vw;
+    height: 12vw;
+    color: #737880;
+  }
+  .form_list ul li span:nth-child(3){
+    float: right;
+    height: 12vw;
+    color:#ff3333;
+    display: block;
+    width: 38%;
+    height: 12vw;
+    text-align: right;
+  }
+  .tan_xq{
+    height: 90%;
+    overflow: auto;
+  }
+      /* 计算价格模块 */
+  .nums{
+    width:94%;
+    text-align: center;
+    padding:2vw 3%;
+    overflow: hidden;
+    position: fixed;
+    line-height: 9vw;
+    bottom: 25vw;
+    background-color: #fff;
+    z-index:10;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px -5px 60px -25px #3388ff;
+    z-index: 100;
+  }
+  .zengall{
+    float: left;
+    margin-bottom:10px;
+  }
+  .nums .zengP{
+    float: right;
+    color: red;
+  }
+  .gouwu{
+    width: 96%;
+    margin: 0 2%;
+    padding-bottom: 40vw;
+  }
+  .gouwu ul li{
+    height: 12vw;
+    margin-top: 7vw;
+    position: relative;
+  }
+  .gouwu ul{
+    overflow: hidden;
+    padding-bottom: 10vw;
+  }
+      /* 增配硬件名称及价格样式 */
+  .gouwu ul li .span_name{
+    position: absolute;
+    display: block;
+    width: 44vw;
+    height: 5vw;
+    left: 0;
+    font-size: 3.8vw;
+    top: 0;
+    color: #737880;
+    font-weight: bold;
+  }
+  .gouwu ul li .span_Price{
+    position: absolute;
+    display: block;
+    width: 44vw;
+    height: 5vw;
+    left: 0;
+    font-size: 3.5vw;
+    top: 6vw;
+    color: #ff3333;
+  }
+  .gouwu ul li .div_jia{
+    position: absolute;
+    width: 47vw;
+    height: 100%;
+    background-color: #e4e9f0;
+    border-radius: 2vw;
+    right: 2px;
+    text-align: center;
+    line-height:12vw;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #737880;
+  }
+  .gouwu .div_jia div{
+    margin:0.5vw;
+    width: 11vw;
+    height: 11vw;
+  }
+  .gouwu .div_jia div img{
+    width: 100%;
+    height: 100%;
+  }
+      /* 加减按钮样式 */
+  .gouwu .div_jia div:nth-child(1){
+    float: left;
+  }
+  .gouwu .div_jia div:nth-child(2){
+    float: right;
+  }
+  /* 完成页面样式 */
+  .xinxi{
+    width: 94%;
+    margin-left: 3%;
+    overflow: hidden;
+    margin-top: 6.6vw;
+  }
+  .xinxi h3{
+    font-size: 4.5vw;
+    text-align: left;
+    font-weight: bold;
+  }
+  .xinxi .xinxi_lieb li{
+    margin-top: 2.5vw;
+    font-size: 3.8vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .xinxi .hang_jisuan{
+    height: 8vw;
+    width: 100%;
+    line-height: 8vw;
+    font-size: 3.8vw;
+    clear: both;
+  }
+  .xinxi .xinxi_lieb li span{
+    float: right;
+    min-height: 5.8vw;
+    width: 65%;
+    text-align: right;
+  }
+  .xinxi .xinxi_lieb li p{
+    float: right;
+    min-height: 5.8vw;
+    margin-left: 7vw;
+    text-align: right;
+  }
+  .xinxi .xinxi_lieb li p .spanaa{
+    float: none;
+    min-height: none;
+    width: none;
+    margin-right: 2px;
+    text-align: none;
+    color: #737880;
+    font-size: 3vw;
+  }
+  .spanab{
+    color: #737880;
+    font-size: 3vw;
+    margin-right: 2px;
+  }
+  .xinxi .heji{
+    display: inline;
+    width: 30%；
+  }
+  .xinxi .heji_zongjia{
+    font-size: 3.9vw;
+    font-weight: bold;
+    color: #ff3333;
+    float: right;
+  }
